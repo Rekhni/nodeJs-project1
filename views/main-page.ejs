@@ -1,0 +1,20 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/fam-member.css">
+</head>
+<body>
+    <%- include('includes/navigation.ejs') %>
+    <main>
+        <% if (members.length > 0) { %>
+            <h1>Family members</h1>
+            <div class="fam">
+                <ul class="fam__items-list">
+            <% for (let member of members) { %>
+                        <li class="fam__item"><%= member.name %></li>
+            <% } %>
+                </ul>
+            </div>
+        <% } else { %>
+            <h1>There is no Family member!</h1>
+        <% } %>
+    </main>
+<%- include('includes/end.ejs') %>

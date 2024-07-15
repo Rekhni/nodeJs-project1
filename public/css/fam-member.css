@@ -1,0 +1,19 @@
+.family-form {
+    width: 20rem;
+    max-width: 90%;
+    margin: auto;
+}
+
+.fam {
+    width: 300px;
+}
+
+
+.fam__items-list {
+    list-style: none;
+}
+
+.fam__item {
+    padding: 10px;
+    border: 1px solid rgb(137, 179, 137)
+}
